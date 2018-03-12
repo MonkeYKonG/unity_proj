@@ -302,3 +302,5 @@ __pycache__/
 Library/*
 Library/assetDatabase3
 *.exe
+*.csproj
+*.unity
