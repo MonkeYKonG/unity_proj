@@ -297,12 +297,8 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
-*.unity
-Library/*
-Library/assetDatabase3
 *.exe
 *.csproj
-*.unity
+Library/*
 Temp/*
-Assembly-CSharp.csproj
-Assembly-CSharp.csproj
+schmup_Data/*
