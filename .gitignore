@@ -298,5 +298,7 @@ __pycache__/
 *.odx.cs
 *.xsd.cs
 *.csproj
-*.csproj
 *.unity
+Library/*
+Library/assetDatabase3
+*.exe

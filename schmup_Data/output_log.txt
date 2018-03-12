@@ -1,10 +1,20 @@
+Mono path[0] = 'G:/perso/unity/an other shut them up/schmup_Data/Managed'
+Mono path[1] = 'G:/perso/unity/an other shut them up/schmup_Data/Mono'
+Mono config path = 'G:/perso/unity/an other shut them up/schmup_Data/Mono/etc'
+PlayerConnection initialized from G:/perso/unity/an other shut them up/schmup_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55173
+Multi-casting "[IP] 192.168.1.23 [Port] 55173 [Flags] 3 [Guid] 2516893601 [EditorId] 4203640143 [Version] 1048832 [Id] WindowsPlayer(Alexis-PC) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.1.23:55173]...
+PlayerConnection accepted from [192.168.1.23] handle:0x240
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56601
+PlayerConnection already initialized - listening to [192.168.1.23:55173]
 Initialize engine version: 5.4.1f1 (649f48bbbf0f)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
     Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
     Vendor:   NVIDIA
-    VRAM:     3072 MB
+    VRAM:     3992 MB
 Begin MonoManager ReloadAssembly
 Platform assembly: G:\perso\unity\an other shut them up\schmup_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading G:\perso\unity\an other shut them up\schmup_Data\Managed\UnityEngine.dll into Unity Child Domain
@@ -14,25 +24,19 @@ Platform assembly: G:\perso\unity\an other shut them up\schmup_Data\Managed\Unit
 Loading G:\perso\unity\an other shut them up\schmup_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: G:\perso\unity\an other shut them up\schmup_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading G:\perso\unity\an other shut them up\schmup_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.036 seconds
+- Completed reload, in  0.040 seconds
 Platform assembly: G:\perso\unity\an other shut them up\schmup_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: G:\perso\unity\an other shut them up\schmup_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3600x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.795917 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.316384 ms
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 428.
-Total: 0.249170 ms (FindLiveObjects: 0.025444 ms CreateObjectMapping: 0.022341 ms MarkObjects: 0.196729 ms  DeleteObjects: 0.004033 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.761164 ms
-
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 344.
-Total: 0.388184 ms (FindLiveObjects: 0.025134 ms CreateObjectMapping: 0.035063 ms MarkObjects: 0.296956 ms  DeleteObjects: 0.029788 ms)
-
+UnloadTime: 0.829740 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 63d4 -> priority: 1 
+  Thread -> id: 3688 -> priority: 1 
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerScript.OnDestroy () [0x00006] in G:\perso\unity\an other shut them up\Assets\scripts\PlayerScript.cs:105 
+ 
+(Filename: G:/perso/unity/an other shut them up/Assets/scripts/PlayerScript.cs Line: 105)
+
+Waiting for finish
