@@ -14,13 +14,20 @@ public class PlayerScript : MonoBehaviour {
     void Update()
     {
         // 3 - Retrieve axis information
-        float inputX = Input.GetAxis("Horizontal");
-        float inputY = Input.GetAxis("Vertical");
-
+        float inputX = Input.GetAxisRaw("Horizontal");
+        float inputY = Input.GetAxisRaw("Vertical");
+        var v3 = Input.mousePosition;
+        v3 = Camera.main.ScreenToWorldPoint(v3);
+        v3.z = 0;
+        if (Input.mousePresent)
+            movement = new Vector2((v3.x - transform.position.x) * speed.x, (v3.y - transform.position.y) * speed.y);
+        //transform.position = v3;
+        //if (rigidbodyComponent != null)
+        //Debug.Log("player x:" + Camera.main.WorldToScreenPoint(rigidbodyComponent.position).ToString());
         // 4 - Movement per direction
-        movement = new Vector2(
-          speed.x * inputX,
-          speed.y * inputY);
+        //movement = new Vector2(
+          //speed.x * inputX,
+          //speed.y * inputY);
 
         // 5 - Shooting
         bool shoot = Input.GetButton("Fire1");
@@ -33,8 +40,8 @@ public class PlayerScript : MonoBehaviour {
             if (weapon != null)
             {
                 // false because the player is not an enemy
-                weapon.Attack(false);
-                SoundEffectsHelper.Instance.MakePlayerShotSound();
+                if (weapon.Attack(false))
+                    SoundEffectsHelper.Instance.MakePlayerShotSound();
             }
         }
 
@@ -100,6 +107,7 @@ public class PlayerScript : MonoBehaviour {
     {
         // Game over
         var gameOver = FindObjectOfType<GameOverScript>();
-        gameOver.ShowButtons();
+        //if (gameObject != null)
+            //gameOver.ShowButtons();
     }
 }

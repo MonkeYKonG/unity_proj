@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameOverScript : MonoBehaviour {
     private Button[] buttons;
@@ -33,12 +34,12 @@ public class GameOverScript : MonoBehaviour {
     public void ExitToMenu()
     {
         // Reload the level
-        Application.LoadLevel("Menu");
+        SceneManager.LoadScene("Menu");
     }
 
     public void RestartGame()
     {
         // Reload the level
-        Application.LoadLevel("Game");
+        SceneManager.LoadScene("Game");
     }
 }
