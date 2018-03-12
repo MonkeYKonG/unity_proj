@@ -297,10 +297,10 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
-*.csproj
 *.unity
 Library/*
 Library/assetDatabase3
 *.exe
 *.csproj
 *.unity
+Temp/*
